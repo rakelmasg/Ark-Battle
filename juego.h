@@ -2,7 +2,7 @@
  * Juego.h
  *
  *  Created on: Dec 31, 2015
- *      Author: Raquel Más
+ *      Author: Raquel Mas
  * 
  */
 
@@ -27,10 +27,10 @@ using namespace std;
 class Juego {
 private:
 	Escena e;  
-	bool vivo=true; //True=nave viva, false=game over
+	bool vivo=true; //TRUE=nave viva, FALSE=nave muerta (fin del juego)
 	int score=0;   //Inicializamos la puntuación a 0.
 	vector<string> niveles = { "Nivel 1", "Nivel 2", "Nivel 3", "Nivel 4","Nivel 5"};    
-	int nivel=0;   //Niveles, vamos a tener 5.
+	int nivel=0;   //Nivel actual
 public:
 	Juego();
 	virtual ~Juego();
